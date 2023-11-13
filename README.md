@@ -10,33 +10,34 @@
 * 
 
 ## Criteria
+
 * Data Integration
-** Environment consistency
-** Volume of data
+  * Environment consistency
+  * Volume of data
 * Data Preparation
-** Performance 
-** Robustness 
-** Explainability 
-** Impact 
-** Computing time
+  * Performance
+  * Robustness
+  * Explainability
+  * Impact
+  * Computing time
 * Modeling
-** Performance
-** Robustness 
-** Safety 
-** Explainability 
-** Model run time 
-** Model storage size 
-** Modeling effort 
-** Transfer learning
+  * Performance
+  * Robustness
+  * Safety
+  * Explainability
+  * Model run time
+  * Model storage size
+  * Modeling effort
+  * Transfer learning
 * Deployment
-** Time restrictions 
-** Value for user 
-** Deployment cost 
-** Complexity 
-** Maturity 
-** Pipeline automation 
-** Scalability 
-** Cyber security
+  * Time restrictions
+  * Value for user
+  * Deployment cost
+  * Complexity
+  * Maturity
+  * Pipeline automation
+  * Scalability
+  * Cyber security
 
 “Fig. 1. Deployability dimensions along ML pipeline steps in production.” ([Heymann et al., 2023, p. 36](zotero://select/groups/5281887/items/WMMAXYY4)) ([pdf](zotero://open-pdf/groups/5281887/items/VWGB29WY?page=5&annotation=QLL9STVH))
 
@@ -52,7 +53,6 @@
 Do we need to test any code?
 
 ---
-
 
 ## Topic
 
