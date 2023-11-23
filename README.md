@@ -9,7 +9,8 @@
   * Tensorflow
   * Pytorch
 * Open-source ML products reference:
-* ![1700749932745](image/README/1700749932745.png)**“Table 1: Sample ML Products for Analysis, from the Curated Dataset of 262 ML Products: Mobile (P1-P10), Desktop (P11P20), and Web Applications (P21-P30)”***(**Nahar et al., 2023, p. 1, 10.48550/arXiv.2308.04328**)*
+* ![1700749932745](image/README/1700749932745.png)
+  * (Table 1., Nahar et al., 2023, p. 1, 10.48550/arXiv.2308.04328)
 
 ## Criteria
 
