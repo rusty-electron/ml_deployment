@@ -4,7 +4,9 @@
 
 **TOP1: Criterien**
 
-* The criterien that listed were for ML Pipeline, not for ML Deployment.**TOP2: Deployment Tools**
+* The criterien that listed were for ML Pipeline, not for ML Deployment.
+
+**TOP2: Deployment Tools**
 
 **TOP3: Organizational**
 
