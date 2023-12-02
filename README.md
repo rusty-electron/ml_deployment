@@ -3,18 +3,38 @@
 ## Deployment Tools
 
 * Frameworks
-  * AWS
-  * Google Cloud
-  * MLflow
-  * Tensorflow
-  * Pytorch
+  * [AWS Sagemaker](https://aws.amazon.com/sagemaker/)
+    * not much customization available
+    * can be used only with AWS ecosystem
+  * [Azure ML](https://azure.microsoft.com/en-us/free/machine-learning/)
+    * [see more info here](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-deploy-model?view=azureml-api-2)
+  * [BentoML](https://docs.bentoml.com/en/latest/)
+  * [KubeFlow](https://www.kubeflow.org/)
+    * integration with Kubernetes
+    * Open-source
+    * Serving using KServe
+  * Google Cloud (is it same as vertex ai??)
+  * [MLflow](https://mlflow.org/)
+    * Open-source
+  * [RayServe](https://docs.ray.io/en/latest/serve/index.html)
+  * [Seldon Core](https://www.seldon.io/solutions/core-plus)
+  * [Tensorflow Serving](https://www.tensorflow.org/tfx/guide/serving)
+  * [TorchServe](https://pytorch.org/serve/)
+    * work only with Pytorch models
+    * simple and lightweight
+  * [Vertex AI](https://cloud.google.com/vertex-ai/docs)
+  * ~~[Cortex.ml](https://github.com/mbrukman/cortex-ml)~~
+    * no longer maintained
+  * [~~BudgetML~~](https://github.com/ebhy/budgetml)
+    * no longer maintained
 * Open-source ML products reference:
-* ![1700749932745](image/README/1700749932745.png)
+
+  ![1700749932745](image/README/1700749932745.png)
   * (Table 1., Nahar et al., 2023, p. 1, 10.48550/arXiv.2308.04328)
 
 ## Criteria
 
-## Integrate with your tools
+## Integrate with our tools
 
 - Basecamp
 - GitLab
@@ -31,9 +51,9 @@ Do we need to test any code?
 
 Focus: comparing tools for deployment of models.
 
-Source: literatures study, major selling points of a tool, other comparisons/independent reviews, come up by ourselves.
+Source: literature study, major selling points of a tool, other comparisons/independent reviews, come up by ourselves.
 
-Initialization: List of tools and criteria for comparison.
+**Initialization: List of tools and criteria for comparison.
 
 Size of Criteria: depends, expectation 10-20.
 
@@ -58,4 +78,4 @@ Do we need License for this project?
 
 ## Project status
 
-Beginns at 2023-12-04
+Begins at 2023-12-04
