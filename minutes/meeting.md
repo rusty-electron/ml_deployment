@@ -21,46 +21,42 @@
 
 ### TOP2: Ceiterien
 
-categorize and mapping this to some labels, excusary to this labels.
+**Some of the criteria are descriptive and some are quantitative, how to balance them and add them to the final table?**
 
-some wekipedia list use footnote to assign long explaination at the end.
+Categorize and map them to some tags that are redundant. Some encyclopedic lists use footnotes at the end for lengthy explanations. Similar to a command line interface, using symbols, etc
 
-command line interface, something like simbles, reference
+**These standards only apply to the production field, do they also apply to our research?**
 
-These criterien are only applied in Production, are they applicatable also for our study?
+Our research focuses on deploying ML models in production to a good standard, so it applies to our project.
 
-focusing on deployment ML models in production in good criteria.
+**Is the inclusion of preprints problematic?**
 
-whether it is problem to include preprints?
+it's okay to use them. One reason to use peer review is to ensure the quality of a paper as long as it is presented at a conference.
 
-as long as it is presented at some conference, one reason to go for peer reviewed is to ensure the quality of the paper. But it is also fine to use them.
+**How do you print a huge list on a poster?**
 
-How do we put the huge list on the poster?
-
-multiple table, landscape mode, most important criteria on them.
+Multiple tables, horizontal patterns, and the most important criteria.
 
 ### TOP3: Deployment Test
 
-Basically, it is good to get some data for the criteria, could easily take long time, we should be able to get some resources. we have to do poster.
+**Are we going to do deployment testing?**
 
-idealy, if we have seen the competitve results, we should figure out some explainations about this. 
+Fundamentally, getting some data for the standard is a good thing, it can easily take a long time, and we should be able to get some resources. If we find content that meets the criteria, we evaluate it; if it's not very important and is just an option, we don't evaluate it.
 
-reagarding the lack of this comparison, it is increasing of intrest.
+**How to deal with competing research findings?**
 
-How to deal with the problem about the topic frame?
+Ideally, if we see the results of the competition, we should have some responsive explanation for it.
 
-if it is out of the time frame, at the time we did this.
+There is very little research on this kind of comparative analysis.
 
-Do we do the deployment test?
+**How do you solve the time frame problem? What if suddenly the topic changes dramatically during the course of the research?**
 
-if we find the content for the criteria, we evaluate them, if it is not important and only an option, we don´t.
+We did so at that time.
 
-Future work for this proj?
+**Future work on the project?**
 
-to evaluate this, if non practical eva
+Practical approach to validate theoretical analysis
 
-case study using the tools found
+Conduct case studies using the tools found. Investigate gaps, practitioners, how to adapt to this work.
 
-investigate gap, practitioner, how to adapt to this work.
-
-Makus 23.12-12.01, next two meetings will be canceled.
+**Makus vacation 23.12-12.01, next two meetings will be canceled.**
