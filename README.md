@@ -3,6 +3,7 @@
 ## Deployment Tools
 
 * Frameworks
+
   * [AWS Sagemaker](https://aws.amazon.com/sagemaker/)
     * not much customization available
     * can be used only with AWS ecosystem
@@ -30,9 +31,14 @@
 * Open-source ML products reference:
 
   ![1700749932745](image/README/1700749932745.png)
+
   * (Table 1., Nahar et al., 2023, p. 1, 10.48550/arXiv.2308.04328)
 
 ## Criteria
+
+**“COMPARISON TABLE FOR AWS SAGEMAKER AND HEROKU”** (R. V. Kulkarni, A. Thakur, S. Nalbalwar, S. Shah and S. Chordia, "Exploring Scalable and Efficient Deployment of Machine Learning Models: A Comparative Analysis of Amazon SageMaker and Heroku," 2023 International Conference on Information Technology (ICIT), Amman, Jordan, 2023, pp. 746-751, doi: 10.1109/ICIT58056.2023.10225793.):
+
+![1704474503822](image/README/1704474503822.png)
 
 ## Integrate with our tools
 
