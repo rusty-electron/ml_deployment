@@ -68,13 +68,13 @@ TOP1: Study Design
 we can keep with this format, current: setting the size, not specific requirement about it, on 02.02.24 we have to present it, before monday next week alternatively, evaluate the options based on the criteria, seperate the work. find a day for the poster, Friday 13:00 sit together
 [https://www.youtube.com/watch?v=SYk29tnxASs](https://www.youtube.com/watch?v=SYk29tnxASs)
 
-template https://www.beschaeftigte.uni-stuttgart.de/uni-services/oeffentlichkeitsarbeit/corporate-design/download-vorlagen/ 
+template https://www.beschaeftigte.uni-stuttgart.de/uni-services/oeffentlichkeitsarbeit/corporate-design/download-vorlagen/
 
-Thursday evening, finalize the content draft, sned to markus - friday morning markus read - friday evening doing the poster. 
+Thursday evening, finalize the content draft, sned to markus - friday morning markus read - friday evening doing the poster.
 
-starts at 3 pm. ca. 90min. 3hours in total at poster in the first 30min indoor room150 uni street34 building 
+starts at 3 pm. ca. 90min. 3hours in total at poster in the first 30min indoor room150 uni street34 building
 
-find balance between the bread, don#t cehckt other source to comferm, ?better do throughful analysis than adding another one?
+find balance between the bread? don#t cehckt other source to comferm, ?better do throughful analysis than adding another one?
 
 don#t have too long list of sources, a medium number of criteria and sources, we don#t need to add in everything
 

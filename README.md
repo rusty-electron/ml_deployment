@@ -52,36 +52,27 @@ QR code for varifications keep in gitlab with open sourced access.
 * Compatibility with Docker/Docker support: Docker containers encapsulate all the dependencies, libraries, and configurations needed for an application. It also allows for the creation of reproducible environments. This means that the same Docker container can be run on different machines or cloud services, ensuring that the ML model’s behavior remains consistent across various deployment scenarios. In many cases, platforms can offer pre-built docker images for common use-cases. [6]
 * Offline batch processing/Request batching: it refers to performing predictions on a batch of data in a scheduled, non-interactive, and often offline manner. Some models are not deployed for real-time applications, they can utilize the parallelizing capabilities of hardware accelerators to wait for a batch of requests to accumulate and then complete them together. [2]
 
+
+## Conclusion
+
+| Deployment Option     | Supported Platforms    | Outlier Detection | Data Drift Detection | Model Monitoring | Model Explainability | CI/CD | Deployment Focus | Cost Plan | Docker Support | Batch Processing |
+| --------------------- | ---------------------- | ----------------- | -------------------- | ---------------- | -------------------- | ----- | ---------------- | --------- | -------------- | ---------------- |
+| AWS SageMaker         | Broad (AWS Ecosystem)  | ?                 | ?                    | ✔               | ✔                   | ✔    | ML Models        | Paid      | ✔             | ✔               |
+| *Azure ML*           | Broad                  | ✔                | ✔                   | ✔               | ✔                   | ✔    | ML Models        | Paid      | ✔             | ✔               |
+| BentoML               | Broad                  | ?                 | ?                    | ✔               | ?                    | ✔    | ML Models        | Free/Paid | ✔             | ✔               |
+| *KubeFlow*           | Broad (via Converters) | ✔ (Seldon Core)  | ✔ (Seldon Core)     | ✔ (Seldon Core) | ✔ (Seldon Core)     | ✔    | ML Models        | Free      | ✔             | ✔               |
+| MLflow                | Broad                  | ?                 | ?                    | ✔               | ✔                   | ✔    | ML Models        | Free      | ✔             | ✔               |
+| *RayServe*           | Broad                  | ?                 | ?                    | ✔               | ?                    | ✔    | ML Models        | Free/Paid | ✔             | ✔               |
+| Seldon Core           | Broad                  | ✔                | ✔                   | ✔               | ✔                   | ✔    | ML Models        | Paid      | ✔             | ✔               |
+| *TensorFlow Serving* | TensorFlow, Keras      | ?                 | ?                    | ✔               | ?                    | ✔    | ML Models        | Free      | ✔             | ✔               |
+| TorchServe            | PyTorch Only           | ?                 | ?                    | ✔               | ?                    | ✔    | ML Models        | Free      | ✔             | ✔               |
+| *Vertex AI*          | Broad                  | ✔                | ✔                   | ✔               | ✔                   | ✔    | ML Models & Apps | Paid      | ✔             | ✔               |
+
+## Future Work
+
 ## Test and Deploy
 
 Do we need to test any code?
-
----
-
-## Topic
-
-Focus: comparing tools for deployment of models.
-
-Source: literature study, major selling points of a tool, other comparisons/independent reviews, come up by ourselves.
-
-**Initialization: List of tools and criteria for comparison.
-
-Size of Criteria: depends, expectation 10-20.
-
-Evaluate ease of deployment: use trial/evaluation programms like bwCloud, evaluate tutorials or experience reports, hands-on evaluation with limited number of options for manageable scope.
-
-## Timeline
-
-December to March
-
-## Teams
-
-flexible online biweekly meetings on Tuesdays at 4:30 p.m. starts from 2023-
-11-28
-
-## Registration
-
-starts from 2023-11-15 on Campus
 
 ## License
 
