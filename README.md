@@ -48,7 +48,7 @@ QR code for varifications keep in gitlab with open sourced access.
   * TensorFlow Serving
   * TorchServe
   * Vertex AI
-* **Threat Protection**: this includes the **security services** and **capabilities** that provide a simple and fast way to understand what is happening within your deployments. (https://learn.microsoft.com/en-us/azure/security/fundamentals/threat-detection). This could include **outlier detection**, it is the process of identifying data points that deviate to a large extent from the overall pattern of the data. This is crucial in machine learning (ML) deployment, as it helps identify anomalies in the input data that could negatively impact model performance. [3] Additionally, **data drift detection** is part of this criteria, data drift occurs when changes are observed in joint distributionp(X, y), whereXis the model input andyis the model output. Detection of data drift is a growing concern for teams that maintain ML models in production [8].
+* **Anomaly detection**: This could include **outlier detection**, it is the process of identifying data points that deviate to a large extent from the overall pattern of the data. This is crucial in machine learning (ML) deployment, as it helps identify anomalies in the input data that could negatively impact model performance. [3] Additionally, **data drift detection** is part of this criteria, data drift occurs when changes are observed in joint distributionp(X, y), whereXis the model input andyis the model output. Detection of data drift is a growing concern for teams that maintain ML models in production [8].
 
   * AWS SageMaker
   * Azure ML (https://learn.microsoft.com/en-us/azure/security/fundamentals/threat-detection):
