@@ -54,102 +54,100 @@ QR code for varifications keep in gitlab with open sourced access.
   * Azure ML ():
   * BentoML
   * **Kubeflow: via Alibi-detect from Seldon Core* https://github.com/kubeflow/pipelines/blob/master/samples/contrib/e2e-outlier-drift-explainer/seldon/README.md
+  * MLflow
+  * RayServe
+  * Seldon Core: Yes
+  * TensorFlow Serving
+  * TorchServe
+  * Vertex AI
+* Model Metrics Monitoring: As it is not possible to check the output labels for live
+  data, the statistics of input data and output predictions are monitored as a proxy for model performance. [3]
 
-    **
-  * **MLflow**
-  * **RayServe**
-  * **Seldon Core: Yes**
-  * **TensorFlow Serving**
-  * **TorchServe**
-  * **Vertex AI**
-* **Model Metrics Monitoring: As it is not possible to check the output labels for live
-  data, the statistics of input data and output predictions are monitored as a proxy for model performance. [3]**
+  * Kubeflow: via Alibi-detect from Seldon Core
 
-  * **Kubeflow: via Alibi-detect from Seldon Core**
+    * https://github.com/kubeflow/pipelines/blob/master/samples/contrib/e2e-outlier-drift-explainer/seldon/README.md
+  * AWS SageMaker
+  * Azure ML
+  * BentoML
+  * Kubeflow:
+  * MLflow
+  * RayServe
+  * Seldon Core
+  * TensorFlow Serving
+  * TorchServe
+  * Vertex AI
+* Model explainability: Explanation algorithms should be available in order to provide insights into the decision process of the model. Explainability in the outputs of a deployed model help in building trust in the ML system [3].
 
-    * **https://github.com/kubeflow/pipelines/blob/master/samples/contrib/e2e-outlier-drift-explainer/seldon/README.md**
-  * **AWS SageMaker**
-  * **Azure ML**
-  * **BentoML**
-  * **Kubeflow:**
-  * **MLflow**
-  * **RayServe**
-  * **Seldon Core**
-  * **TensorFlow Serving**
-  * **TorchServe**
-  * **Vertex AI**
-* **Model explainability: Explanation algorithms should be available in order to provide insights into the decision process of the model. Explainability in the outputs of a deployed model help in building trust in the ML system [3].**
+  * AWS SageMaker
+  * Azure ML
+  * BentoML
+  * Kubeflow:
+  * MLflow
+  * RayServe
+  * Seldon Core
+  * TensorFlow Serving
+  * TorchServe
+  * Vertex AI
+* Continuous integration and continuous delivery: CI/CD is a powerful tool that can help ML teams develop and deploy models faster and more efficiently [8].
 
-  * **AWS SageMaker**
-  * **Azure ML**
-  * **BentoML**
-  * **Kubeflow:**
-  * **MLflow**
-  * **RayServe**
-  * **Seldon Core**
-  * **TensorFlow Serving**
-  * **TorchServe**
-  * **Vertex AI**
-* **Continuous integration and continuous delivery: CI/CD is a powerful tool that can help ML teams develop and deploy models faster and more efficiently [8].**
+  * AWS SageMaker
+  * Azure ML
+  * BentoML
+  * Kubeflow:
+  * MLflow
+  * RayServe
+  * Seldon Core
+  * TensorFlow Serving
+  * TorchServe
+  * Vertex AI
+* Deployment Focus: Which kind of ML models does the option support to deploy, e.g. Only Machine Learning models or Web applications possible.[4] PG: being able to deploy web applications too might not be a priority for ML engineers so this criterion is a low priority one but can be included.
 
-  * **AWS SageMaker**
-  * **Azure ML**
-  * **BentoML**
-  * **Kubeflow:**
-  * **MLflow**
-  * **RayServe**
-  * **Seldon Core**
-  * **TensorFlow Serving**
-  * **TorchServe**
-  * **Vertex AI**
-* **Deployment Focus: Which kind of ML models does the option support to deploy, e.g. Only Machine Learning models or Web applications possible.[4] PG: being able to deploy web applications too might not be a priority for ML engineers so this criterion is a low priority one but can be included.**
+  * AWS SageMaker
+  * Azure ML
+  * BentoML
+  * Kubeflow:
+  * MLflow
+  * RayServe
+  * Seldon Core
+  * TensorFlow Serving
+  * TorchServe
+  * Vertex AI
+* Cost plan: How much does it cost e.g. monthly?[4] This is a good criterion :). We can find this data from their pricing page of the respective websites. This can also include feature like cost monitoring.
 
-  * **AWS SageMaker**
-  * **Azure ML**
-  * **BentoML**
-  * **Kubeflow:**
-  * **MLflow**
-  * **RayServe**
-  * **Seldon Core**
-  * **TensorFlow Serving**
-  * **TorchServe**
-  * **Vertex AI**
-* **Cost plan: How much does it cost e.g. monthly?[4] This is a good criterion :). We can find this data from their pricing page of the respective websites. This can also include feature like cost monitoring.**
+  * AWS SageMaker
+  * Azure ML
+  * BentoML
+  * Kubeflow:
+  * MLflow
+  * RayServe
+  * Seldon Core
+  * TensorFlow Serving
+  * TorchServe
+  * Vertex AI
+* Compatibility with Docker/Docker support: Docker containers encapsulate all the dependencies, libraries, and configurations needed for an application. It also allows for the creation of reproducible environments. This means that the same Docker container can be run on different machines or cloud services, ensuring that the ML model’s behavior remains consistent across various deployment scenarios. In many cases, platforms can offer pre-built docker images for common use-cases. [6]
 
-  * **AWS SageMaker**
-  * **Azure ML**
-  * **BentoML**
-  * **Kubeflow:**
-  * **MLflow**
-  * **RayServe**
-  * **Seldon Core**
-  * **TensorFlow Serving**
-  * **TorchServe**
-  * **Vertex AI**
-* **Compatibility with Docker/Docker support: Docker containers encapsulate all the dependencies, libraries, and configurations needed for an application. It also allows for the creation of reproducible environments. This means that the same Docker container can be run on different machines or cloud services, ensuring that the ML model’s behavior remains consistent across various deployment scenarios. In many cases, platforms can offer pre-built docker images for common use-cases. [6]**
+  * AWS SageMaker
+  * Azure ML
+  * BentoML
+  * Kubeflow:
+  * MLflow
+  * RayServe
+  * Seldon Core
+  * TensorFlow Serving
+  * TorchServe
+  * Vertex AI
+* Offline batch processing/Request batching: it refers to performing predictions on a batch of data in a scheduled, non-interactive, and often offline manner. Some models are not deployed for real-time applications, they can utilize the parallelizing capabilities of hardware accelerators to wait for a batch of requests to accumulate and then complete them together. [2]
 
-  * **AWS SageMaker**
-  * **Azure ML**
-  * **BentoML**
-  * **Kubeflow:**
-  * **MLflow**
-  * **RayServe**
-  * **Seldon Core**
-  * **TensorFlow Serving**
-  * **TorchServe**
-  * **Vertex AI**
-* **Offline batch processing/Request batching: it refers to performing predictions on a batch of data in a scheduled, non-interactive, and often offline manner. Some models are not deployed for real-time applications, they can utilize the parallelizing capabilities of hardware accelerators to wait for a batch of requests to accumulate and then complete them together. [2]**
-
-  * **AWS SageMaker**
-  * **Azure ML**
-  * **BentoML**
-  * **Kubeflow:**
-  * **MLflow**
-  * **RayServe**
-  * **Seldon Core**
-  * **TensorFlow Serving**
-  * **TorchServe**
-  * **Vertex AI**
+  * AWS SageMaker
+  * Azure ML
+  * BentoML
+  * Kubeflow:
+  * MLflow
+  * RayServe
+  * Seldon Core
+  * TensorFlow Serving
+  * TorchServe
+  * Vertex AI
 
 ## Conclusion
 
