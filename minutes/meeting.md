@@ -60,3 +60,30 @@ Practical approach to validate theoretical analysis
 Conduct case studies using the tools found. Investigate gaps, practitioners, how to adapt to this work.
 
 **Makus vacation 23.12-12.01, next two meetings will be canceled.**
+
+## 2024.01.23
+
+TOP1: Study Design
+
+we can keep with this format, current: setting the size, not specific requirement about it, on 02.02.24 we have to present it, before monday next week alternatively, evaluate the options based on the criteria, seperate the work. find a day for the poster, Friday 13:00 sit together
+[https://www.youtube.com/watch?v=SYk29tnxASs](https://www.youtube.com/watch?v=SYk29tnxASs)
+
+template https://www.beschaeftigte.uni-stuttgart.de/uni-services/oeffentlichkeitsarbeit/corporate-design/download-vorlagen/ 
+
+Thursday evening, finalize the content draft, sned to markus - friday morning markus read - friday evening doing the poster. 
+
+starts at 3 pm. ca. 90min. 3hours in total at poster in the first 30min indoor room150 uni street34 building 
+
+find balance between the bread, don#t cehckt other source to comferm, ?better do throughful analysis than adding another one?
+
+don#t have too long list of sources, a medium number of criteria and sources, we don#t need to add in everything
+
+TOP2: Criteria
+
+2 - 4 better as 1, combine them, three point system? wheneve2,3 complete, 4 is complete.  ease of use, time etc. would be difficult without doing deployment, ease of installation, can the tool be setup locally? how easy it is to be setup?
+
+suggestions: good number of criteria.
+
+TOP3: Options
+
+in model serving section looks applicable for us, we can say according the website... as a datasource, distibution of options
