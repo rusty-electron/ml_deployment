@@ -1,8 +1,6 @@
 ## Deployment Options
 
 * [AWS Sagemaker](https://aws.amazon.com/sagemaker/)
-  * not much customization available
-  * can be used only with AWS ecosystem
 * [Azure ML](https://azure.microsoft.com/en-us/free/machine-learning/)
   * [see more info here](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-deploy-model?view=azureml-api-2)
 * [BentoML](https://docs.bentoml.com/en/latest/)
@@ -22,14 +20,19 @@
 
 ## Criteria
 
-* Number of supported input model type: it can deploy any common model built with popular ML training frameworks. e.g., onnx, tensorflow, keras, etc. [[2]](#References)
+* Supported Input Model Type: it can deploy any common model built with popular ML training frameworks. e.g., onnx, tensorflow, keras, etc. [[2]](#References)
 
-  * AWS SageMaker
-  * Azure ML (https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-catalog?view=azureml-api-2#collections):
-    * **Open source models curated by Azure AI**, 'Curated by Azure AI' and collections from partners such as **Meta, NVIDIA, Mistral AI** are all curated collections on the Catalog.
-    * **Azure OpenAI models, exclusively available on Azure**
-    * **Transformers models from the HuggingFace hub**
-  * BentoML: As per their [documentation](), BentoML supports the following ML frameworks:
+  * AWS SageMaker: [documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/neo-supported-devices-edge.html)
+
+    * not much customization available
+    * can be used only with AWS ecosystem
+  * Azure ML: As per their [documentation](https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-catalog?view=azureml-api-2#collections), Azure ML supports the following ML frameworks:
+
+    * Open source models curated by Azure AI, 'Curated by Azure AI' and collections from partners such as Meta, NVIDIA, Mistral AI are all curated collections on the Catalog.
+    * Azure OpenAI models, exclusively available on Azure
+    * Transformers models from the HuggingFace hub
+  * BentoML: As per their [documentation](https://docs.bentoml.org/en/latest/frameworks/index.html), BentoML supports the following ML frameworks:
+
     * CatBoost
     * Diffusers
     * fast.ai
@@ -46,53 +49,56 @@
     * Detectron2
     * EasyOCR.
       Apart from these, BentoML also supports [custom models](https://docs.bentoml.org/en/latest/frameworks/index.html#custom-models).
-  * Kubeflow:
-    * **PyTorch**
-    * **TensorFlow**
-    * **Hugging Face**
-    * **Jupyter**
-    * **scikit-learn**
-    * **HOROVOD**
-    * **dmlcXGBoost**
-  * MLflow: It supports many ML frameworks as [built-in flavours](https://mlflow.org/docs/latest/models.html#built-in-model-flavors), see here for list. Apart from these, it also supports [community contributed flavours](https://mlflow.org/docs/latest/community-model-flavors.html).
-  * RayServe
+  * Kubeflow: As per [documentation](https://www.kubeflow.org/docs/external-add-ons/serving/overview/)
+
+    * PyTorch
+    * TensorFlow
+    * Hugging Face
+    * Jupyter
+    * scikit-learn
+    * HOROVOD
+    * dmlcXGBoost
+  * MLflow: It supports many ML frameworks, see [built-in flavours](https://mlflow.org/docs/latest/models.html#built-in-model-flavors) for list. Apart from these, it also supports [community contributed flavours](https://mlflow.org/docs/latest/community-model-flavors.html).
+  * RayServe: It supports many ML frameworks, see [documentation](https://docs.ray.io/en/latest/serve/tutorials/serve-ml-models.html#serve-ml-models-tutorial) for list, i.e.: 
+    * Tensorflow
+    * PyTorch
+    * Scikit-Learn
+    * others
   * Seldon Core: it supports the most common ML frameworks, see [here](https://docs.seldon.io/projects/seldon-core/en/v2/contents/models/inference-artifacts/index.html) for details. It also supports custom models e.g., pickled models.
-  * TensorFlow Serving
-  * TorchServe
-  * Vertex AI
-* Model Metrics Monitoring: As it is not possible to check the output labels for live
-  data, the statistics of input data and output predictions are monitored as a proxy for model performance. [3]
+  * TensorFlow Serving: it supports only TensorFlow models. see [here](https://www.tensorflow.org/tfx/tutorials/serving/rest_simple)
+  * TorchServe: it supports only Pytorch models. see [here](https://github.com/pytorch/serve)
+  * Vertex AI: custom models and all AutoML data types - text, tabular, image, and video. The Model Registry can also support BigQuery ML models, see [here](https://cloud.google.com/vertex-ai/docs/model-registry/introduction#:~:text=The%20Vertex%20AI%20Model%20Registry%20supports%20custom%20models%20and%20all,also%20support%20BigQuery%20ML%20models.)
 
-  * AWS SageMaker
-  * Azure ML: Yes (https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-monitoring?view=azureml-api-2)
-  * BentoML:
-    * Yes, it does provide an unified interface for logging model metrics and predictions to various platforms. See [here](https://docs.bentoml.org/en/latest/guides/monitoring.html) for details.
-  * Kubeflow: Yes (via Alibi-detect from Seldon Core: https://github.com/kubeflow/pipelines/blob/master/samples/contrib/e2e-outlier-drift-explainer/seldon/README.md)
-  * MLflow
-  * RayServe
-  * Seldon Core
-  * TensorFlow Serving
-  * TorchServe
-  * Vertex AI
-* **Anomaly detection**: Also known as **outlier detection**, it is the process of identifying data points that deviate to a large extent from the overall pattern of the data. This is crucial in machine learning (ML) deployment, as it helps identify anomalies in the input data that could negatively impact model performance. [[3]](#References) Additionally, **data drift detection** is part of this criterion, data drift occurs when changes are observed in joint distribution $p(X, y)$, where $X$ is the model input and $y$ is the model output. Detection of data drift is a growing concern for teams that maintain ML models in production [[8]](#References).
+* Model Metrics Monitoring: As it is not possible to check the output labels for live data, the statistics of input data and output predictions are monitored as a proxy for model performance. [[3]](#References)
 
-  * AWS SageMaker
-  * Azure ML: Yes (https://techcommunity.microsoft.com/t5/ai-customer-engineering-team/introducing-azure-anomaly-detector-api/ba-p/490162)
-    * Outlier Detection (Change Points detection): Yes (https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/overview)
-    * Data Drift Detection: Yes (https://learn.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets?view=azureml-api-1&tabs=python)
-  * BentoML:
-    * Yes, but there is a caveat. BentoML provides an unified interface for logging model metrics but their [blog article](https://bentoml.com/blog/a-guide-to-ml-monitoring-and-drift-detection) mentions that it relies on other open-source libraries for the feature of data drift detection. The documentation didn't mention any specific library for outlier detection.
-  * Kubeflow: Yes (via Alibi-detect from Seldon Core: https://github.com/kubeflow/pipelines/blob/master/samples/contrib/e2e-outlier-drift-explainer/seldon/README.md)
-  * MLflow
-  * RayServe
-  * Seldon Core: Yes
-  * TensorFlow Serving
-  * TorchServe
+  * AWS SageMaker: Yes, see[here](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html)
+  * Azure ML: Yes, check [here](https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-monitoring?view=azureml-api-2)
+  * BentoML: Yes, it does provide an unified interface for logging model metrics and predictions to various platforms. See [here](https://docs.bentoml.org/en/latest/guides/monitoring.html) for details.
+  * Kubeflow: Yes, via Alibi-detect from Seldon Core, check [here](https://github.com/kubeflow/pipelines/blob/master/samples/contrib/e2e-outlier-drift-explainer/seldon/README.md)
+  * MLflow: Yes, see [here](https://mlflow.org/docs/latest/tracking.html)
+  * RayServe: Yes, see [here](https://docs.ray.io/en/latest/ray-observability/index.html)
+  * Seldon Core: Yes, via Alibi, see [here](https://www.seldon.io/solutions/open-source-projects/alibi-detect)
+  * TensorFlow Serving: Yes, via Prometheus or Grafana, see [here](https://itnext.io/monitor-deployed-tensorflow-models-with-prometheus-and-grafana-28d6135a2666#645f)
+  * TorchServe: Yes, both front and backend, see [here](https://pytorch.org/serve/metrics.html)
+  * Vertex AI: Yes, see [here](https://blog.nashtechglobal.com/the-power-of-vertex-ai-monitoring/)
+* Anomaly detection: Also known as outlier detection, it is the process of identifying data points that deviate to a large extent from the overall pattern of the data. This is crucial in machine learning (ML) deployment, as it helps identify anomalies in the input data that could negatively impact model performance. [[3]](#References) Additionally, data drift detection is part of this criterion, data drift occurs when changes are observed in joint distribution $p(X, y)$, where $X$ is the model input and $y$ is the model output. Detection of data drift is a growing concern for teams that maintain ML models in production [[8]](#References).
+
+  * AWS SageMaker: Yes, see [here](https://aws.amazon.com/de/blogs/machine-learning/anomaly-detection-with-amazon-sagemaker-edge-manager-using-aws-iot-greengrass-v2/)
+  * Azure ML: Yes, check [here](https://techcommunity.microsoft.com/t5/ai-customer-engineering-team/introducing-azure-anomaly-detector-api/ba-p/490162)
+    * Outlier Detection (Change Points detection): Yes, check [here](https://learn.microsoft.com/en-us/azure/ai-services/anomaly-detector/overview)
+    * Data Drift Detection: Yes, check [here](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets?view=azureml-api-1&tabs=python)
+  * BentoML: Yes, but there is a caveat. BentoML provides an unified interface for logging model metrics but their [blog article](https://bentoml.com/blog/a-guide-to-ml-monitoring-and-drift-detection) mentions that it relies on other open-source libraries for the feature of data drift detection. The documentation didn't mention any specific library for outlier detection.
+  * Kubeflow: Yes, via Alibi-detect from Seldon Core, check [here](https://github.com/kubeflow/pipelines/blob/master/samples/contrib/e2e-outlier-drift-explainer/seldon/README.md)
+  * MLflow: Yes, via Kakapo, check [here](https://www.databricks.com/blog/2023/03/13/unsupervised-outlier-detection-databricks.html)
+  * RayServe: No, since it focuses on the scalable and efficient serving of machine learning models, check [here](https://docs.ray.io/en/latest/serve/index.html)
+  * Seldon Core: Yes, check [here](https://docs.seldon.io/projects/seldon-core/en/latest/analytics/outlier_detection.html)
+  * TensorFlow Serving: No, similar as RayServe, it focused on serving machine learning models efficiently and does not inherently include specific features for anomaly detection during deployment. it can include TensorFlow libraries to do anomaly detection. see [here](https://www.tensorflow.org/tfx/guide/serving)
+  * TorchServe: No, similar as RayServe and TensorFlow Serving, see[here](https://pytorch.org/serve/)
   * Vertex AI
 * Model explainability (might not be relevant for deployment tools): Explanation algorithms should be available in order to provide insights into the decision process of the model. Explainability in the outputs of a deployed model help in building trust in the ML system [[3]](#References).
 
   * AWS SageMaker
-  * Azure ML: Yes (https://learn.microsoft.com/en-us/azure/machine-learning/how-to-machine-learning-interpretability-automl?view=azureml-api-1)
+  * Azure ML: Yes, check [here](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-machine-learning-interpretability-automl?view=azureml-api-1)
   * BentoML
   * Kubeflow:
   * MLflow
@@ -104,7 +110,7 @@
 * Continuous integration and continuous delivery: CI/CD is a powerful tool that can help ML teams develop and deploy models faster and more efficiently [[8]](#References).
 
   * AWS SageMaker
-  * Azure ML: Yes (https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-event-grid?view=azureml-api-2)
+  * Azure ML: Yes, check [here](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-event-grid?view=azureml-api-2)
   * BentoML: Yes, it is possible via [GitHub Actions](https://docs.bentoml.com/en/latest/guides/github-actions.html). A guide to setting up an automated CI/CD pipeline for [Bento](https://docs.bentoml.com/en/latest/concepts/bento.html) deployment can be found [here](https://docs.bentoml.org/en/latest/bentocloud/best-practices/bento-building-and-deployment.html).
   * Kubeflow:
   * MLflow
