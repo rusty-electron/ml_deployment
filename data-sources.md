@@ -94,7 +94,7 @@
   * Seldon Core: Yes, check [here](https://docs.seldon.io/projects/seldon-core/en/latest/analytics/outlier_detection.html)
   * TensorFlow Serving: No, similar as RayServe, it focused on serving machine learning models efficiently and does not inherently include specific features for anomaly detection during deployment. it can include TensorFlow libraries to do anomaly detection. see [here](https://www.tensorflow.org/tfx/guide/serving)
   * TorchServe: No, similar as RayServe and TensorFlow Serving, see[here](https://pytorch.org/serve/)
-  * Vertex AI
+  * Vertex AI: No, while Vertex AI itself is not primarily an anomaly detection tool, it offers capabilities and integrations that can be used for anomaly detection purposes in deployed machine learning models, see [here](https://cloud.google.com/vertex-ai/docs/beginner/bqml)
 * Model explainability (might not be relevant for deployment tools): Explanation algorithms should be available in order to provide insights into the decision process of the model. Explainability in the outputs of a deployed model help in building trust in the ML system [[3]](#References).
 
   * AWS SageMaker
