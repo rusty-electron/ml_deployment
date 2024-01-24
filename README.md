@@ -67,7 +67,7 @@ In summary, the choice of deployment platform depends on specific needs like fra
 
 ## License
 
-Do we need License for this project?
+Through QR code, this repo could be linked as project details.
 
 ## Project status
 
