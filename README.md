@@ -48,8 +48,7 @@ QR code for varifications keep in gitlab with open sourced access.
     * Transformers
     * XGBoost
     * Detectron2
-    * EasyOCR
-    
+    * EasyOCR.
     Apart from these, BentoML also supports [custom models](https://docs.bentoml.org/en/latest/frameworks/index.html#custom-models).
   * Kubeflow:
     * model from **PyTorch, TensorFlow, Hugging Face, Jupyter, scikit-learn, HOROVOD, dmlcXGBoost**
