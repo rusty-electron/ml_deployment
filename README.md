@@ -5,27 +5,21 @@ QR code for varifications keep in gitlab with open sourced access.
 ## Deployment Options
 
 * [AWS Sagemaker](https://aws.amazon.com/sagemaker/)
-
   * not much customization available
   * can be used only with AWS ecosystem
 * [Azure ML](https://azure.microsoft.com/en-us/free/machine-learning/)
-
   * [see more info here](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-deploy-model?view=azureml-api-2)
 * [BentoML](https://docs.bentoml.com/en/latest/)
 * [KubeFlow](https://www.kubeflow.org/)
-
   * integration with Kubernetes
   * Open-source
   * Serving using KServe
-  * 
 * [MLflow](https://mlflow.org/)
-
   * Open-source
 * [RayServe](https://docs.ray.io/en/latest/serve/index.html)
 * [Seldon Core](https://www.seldon.io/solutions/core-plus)
 * [Tensorflow Serving](https://www.tensorflow.org/tfx/guide/serving)
 * [TorchServe](https://pytorch.org/serve/)
-
   * work only with Pytorch models
   * simple and lightweight
 * [Vertex AI](https://cloud.google.com/vertex-ai/docs) (Google Cloud)
@@ -39,7 +33,7 @@ QR code for varifications keep in gitlab with open sourced access.
     * **Open source models curated by Azure AI**, 'Curated by Azure AI' and collections from partners such as **Meta, NVIDIA, Mistral AI** are all curated collections on the Catalog.
     * **Azure OpenAI models, exclusively available on Azure**
     * **Transformers models from the HuggingFace hub**
-  * BentoML
+  * BentoML:
   * Kubeflow:
     * model from **PyTorch, TensorFlow, Hugging Face, Jupyter, scikit-learn, HOROVOD, dmlcXGBoost**
   * MLflow
