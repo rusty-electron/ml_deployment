@@ -5,8 +5,7 @@ QR code for varifications keep in gitlab with open sourced access.
 ## Deployment Options
 
 * [AWS Sagemaker](https://aws.amazon.com/sagemaker/)
-* [Azure ML](https://azure.microsoft.com/en-us/free/machine-learning/)
-  * [see more info here](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-deploy-model?view=azureml-api-2)
+* [Azure ML](https://learn.microsoft.com/en-us/azure/machine-learning/tutorial-deploy-model?view=azureml-api-2)
 * [BentoML](https://docs.bentoml.com/en/latest/)
 * [KubeFlow](https://www.kubeflow.org/)
 * [MLflow](https://mlflow.org/)
