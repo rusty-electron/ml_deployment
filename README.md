@@ -49,12 +49,13 @@ QR code for varifications keep in gitlab with open sourced access.
     * XGBoost
     * Detectron2
     * EasyOCR
+    
     Apart from these, BentoML also supports [custom models](https://docs.bentoml.org/en/latest/frameworks/index.html#custom-models).
   * Kubeflow:
     * model from **PyTorch, TensorFlow, Hugging Face, Jupyter, scikit-learn, HOROVOD, dmlcXGBoost**
-  * MLflow
+  * MLflow: It supports many ML frameworks as [built-in flavours](https://mlflow.org/docs/latest/models.html#built-in-model-flavors), see here for list. Apart from these, it also supports [community contributed flavours](https://mlflow.org/docs/latest/community-model-flavors.html).
   * RayServe
-  * Seldon Core
+  * Seldon Core: it supports the most common ML frameworks, see [here](https://docs.seldon.io/projects/seldon-core/en/v2/contents/models/inference-artifacts/index.html) for details. It also supports custom models e.g., pickled models.
   * TensorFlow Serving
   * TorchServe
   * Vertex AI
