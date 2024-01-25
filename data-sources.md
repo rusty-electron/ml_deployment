@@ -71,11 +71,11 @@
 
 * Model Metrics Monitoring: As it is not possible to check the output labels for live data, the statistics of input data and output predictions are monitored as a proxy for model performance. [[3]](#References)
 
-  * AWS SageMaker: Yes, see[here](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html)
+  * AWS SageMaker: Yes, see [here](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html)
   * Azure ML: Yes, check [here](https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-monitoring?view=azureml-api-2)
   * BentoML: Yes, it does provide an unified interface for logging model metrics and predictions to various platforms. See [here](https://docs.bentoml.org/en/latest/guides/monitoring.html) for details.
   * Kubeflow: Yes, via Alibi-detect from Seldon Core, check [here](https://github.com/kubeflow/pipelines/blob/master/samples/contrib/e2e-outlier-drift-explainer/seldon/README.md)
-  * MLflow: Yes, see [here](https://mlflow.org/docs/latest/tracking.html)
+  * MLflow: Yes. It provides an API and a UI for conducting model monitoring. The tracking tool is organized around the concept of runs which can be organized into experiments. The tracking APIs provide a set of functions to track your runs and this tracked data can be later visualized in the tracking UI. See details [here](https://mlflow.org/docs/latest/tracking.html).
   * RayServe: Yes, see [here](https://docs.ray.io/en/latest/ray-observability/index.html)
   * Seldon Core: Yes, via Alibi, see [here](https://www.seldon.io/solutions/open-source-projects/alibi-detect)
   * TensorFlow Serving: Yes, via Prometheus or Grafana, see [here](https://itnext.io/monitor-deployed-tensorflow-models-with-prometheus-and-grafana-28d6135a2666#645f)
@@ -89,7 +89,7 @@
     * Data Drift Detection: Yes, check [here](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-monitor-datasets?view=azureml-api-1&tabs=python)
   * BentoML: Yes, but there is a caveat. BentoML provides an unified interface for logging model metrics but their [blog article](https://bentoml.com/blog/a-guide-to-ml-monitoring-and-drift-detection) mentions that it relies on other open-source libraries for the feature of data drift detection. The documentation didn't mention any specific library for outlier detection.
   * Kubeflow: Yes, via Alibi-detect from Seldon Core, check [here](https://github.com/kubeflow/pipelines/blob/master/samples/contrib/e2e-outlier-drift-explainer/seldon/README.md)
-  * MLflow: Yes, via Kakapo, check [here](https://www.databricks.com/blog/2023/03/13/unsupervised-outlier-detection-databricks.html)
+  * MLflow: Yes, MLflow can be integrated with other libraries that can perform outlier detection. 
   * RayServe: No, since it focuses on the scalable and efficient serving of machine learning models, check [here](https://docs.ray.io/en/latest/serve/index.html)
   * Seldon Core: Yes, check [here](https://docs.seldon.io/projects/seldon-core/en/latest/analytics/outlier_detection.html)
   * TensorFlow Serving: No, similar as RayServe, it focused on serving machine learning models efficiently and does not inherently include specific features for anomaly detection during deployment. it can include TensorFlow libraries to do anomaly detection. see [here](https://www.tensorflow.org/tfx/guide/serving)
@@ -113,7 +113,7 @@
   * Azure ML: Yes, check [here](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-use-event-grid?view=azureml-api-2)
   * BentoML: Yes, it is possible via [GitHub Actions](https://docs.bentoml.com/en/latest/guides/github-actions.html). A guide to setting up an automated CI/CD pipeline for [Bento](https://docs.bentoml.com/en/latest/concepts/bento.html) deployment can be found [here](https://docs.bentoml.org/en/latest/bentocloud/best-practices/bento-building-and-deployment.html).
   * Kubeflow:
-  * MLflow
+  * MLflow: Yes, it supports integration with CI/CD systems like Jenkins, see [here](https://www.restack.io/docs/mlflow-knowledge-mlops-mlflow-guide) for guidance.
   * RayServe
   * Seldon Core
   * TensorFlow Serving
@@ -125,7 +125,7 @@
   * Azure ML: any kind of ML models
   * BentoML: Even though BentoML is designed with ML models in mind, it doesn't enforce the inclusion of a model. You can simply package your web application's code and dependencies in a Bento.
   * Kubeflow:
-  * MLflow
+  * MLflow: No, there was no mention of being able to deploy web applications in the documentation of MLflow.
   * RayServe: any kind of ML models ([Ray Serve: Scalable and Programmable Serving — Ray 2.9.1](https://docs.ray.io/en/latest/serve/index.html#ray-serve-scalable-and-programmable-serving))
   * Seldon Core
   * TensorFlow Serving: only TensorFlow models
@@ -137,12 +137,12 @@
   * Azure ML: consumption-based
   * BentoML: Open-source. (ask about including paid plans of subsidiaries like BentoCloud to Markus)
     It does offers fully managed platforms on a pay-as-you-go basis. It has a enterprise plan that offers additional features like deploying on VPCs, dedicated support, etc. See [details](https://www.bentoml.com/cloud#pricing).
-  * Kubeflow: open-source
-  * MLflow: open-source
-  * RayServe: open-source
-  * Seldon Core: open-source
-  * TensorFlow Serving: open-source
-  * TorchServe: open-source
+  * Kubeflow: Open-source
+  * MLflow: Open-source
+  * RayServe: Open-source
+  * Seldon Core: Open-source
+  * TensorFlow Serving: Open-source
+  * TorchServe: Open-source
   * Vertex AI: pay-as you-go
 * Compatibility with Docker/Docker support: Docker containers encapsulate all the dependencies, libraries, and configurations needed for an application. It also allows for the creation of reproducible environments. This means that the same Docker container can be run on different machines or cloud services, ensuring that the ML model’s behavior remains consistent across various deployment scenarios. In many cases, platforms can offer pre-built docker images for common use-cases. [[6]](#References)
   (it might not be a good criterion as all the options support Docker)
@@ -151,7 +151,7 @@
   * Azure ML: Yes ([microsoft-azureml - Official Image | Docker Hub](https://hub.docker.com/_/microsoft-azureml))
   * BentoML
   * Kubeflow: Yes ([Container Images | Kubeflow](https://www.kubeflow.org/docs/components/notebooks/container-images/))
-  * MLflow: Yes ([Official MLflow Docker Image — MLflow 2.9.2 documentation](https://mlflow.org/docs/latest/docker.html))
+  * MLflow: Yes, it officially supports Docker and also provides an offical docker image. see [Official MLflow Docker Image](https://mlflow.org/docs/latest/docker.html)
   * RayServe: Yes ([Trying to deploy ray with docker - Ray Libraries (Data, Train, Tune, Serve) / Ray Serve - Ray](https://discuss.ray.io/t/trying-to-deploy-ray-with-docker/766))
   * Seldon Core
   * TensorFlow Serving: Yes ([TensorFlow Serving with Docker  |  TFX](https://www.tensorflow.org/tfx/serving/docker))
@@ -163,7 +163,7 @@
   * Azure ML: Yes ([Deploy machine learning models in production environments - Cloud Adoption Framework | Microsoft Learn](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/ml-deployment-inference#architectural-considerations))
   * BentoML: Yes, it supports adaptive batching. See [here](https://docs.bentoml.com/en/latest/guides/batching.html) for details.
   * Kubeflow: Yes (via Seldon Core: [Batch processing with Kubeflow Pipelines — seldon-core documentation](https://docs.seldon.io/projects/seldon-core/en/latest/examples/kubeflow_pipelines_batch.html))
-  * MLflow
+  * MLflow: No, as of now it doesn't support offline batch processing. There is an [open issue](https://github.com/mlflow/mlflow/issues/8007) for implementing opportunistic batch processing in MLflow.
   * RayServe: Yes ([Dynamic Request Batching — Ray 2.9.1](https://docs.ray.io/en/latest/serve/advanced-guides/dyn-req-batch.html))
   * Seldon Core: Yes ([Batch processing with Kubeflow Pipelines — seldon-core documentation](https://docs.seldon.io/projects/seldon-core/en/latest/examples/kubeflow_pipelines_batch.html))
   * TensorFlow Serving: Yes ([serving/tensorflow_serving/batching/README.md at master · tensorflow/serving · GitHub](https://github.com/tensorflow/serving/blob/master/tensorflow_serving/batching/README.md#batch-scheduling-parameters-and-tuning))
