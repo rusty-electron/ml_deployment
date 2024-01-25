@@ -71,16 +71,16 @@
 
 * Model Metrics Monitoring: As it is not possible to check the output labels for live data, the statistics of input data and output predictions are monitored as a proxy for model performance. [[3]](#References)
 
-  * AWS SageMaker: Yes, see [here](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html)
-  * Azure ML: Yes, check [here](https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-monitoring?view=azureml-api-2)
+  * AWS SageMaker: Yes, see [here](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor.html).
+  * Azure ML: Yes, check [here](https://learn.microsoft.com/en-us/azure/machine-learning/concept-model-monitoring?view=azureml-api-2).
   * BentoML: Yes, it does provide an unified interface for logging model metrics and predictions to various platforms. See [here](https://docs.bentoml.org/en/latest/guides/monitoring.html) for details.
-  * Kubeflow: Yes, via Alibi-detect from Seldon Core, check [here](https://github.com/kubeflow/pipelines/blob/master/samples/contrib/e2e-outlier-drift-explainer/seldon/README.md)
+  * Kubeflow: Yes, via Alibi-detect from Seldon Core, check [here](https://github.com/kubeflow/pipelines/blob/master/samples/contrib/e2e-outlier-drift-explainer/seldon/README.md).
   * MLflow: Yes. It provides an API and a UI for conducting model monitoring. The tracking tool is organized around the concept of runs which can be organized into experiments. The tracking APIs provide a set of functions to track your runs and this tracked data can be later visualized in the tracking UI. See details [here](https://mlflow.org/docs/latest/tracking.html).
-  * RayServe: Yes, see [here](https://docs.ray.io/en/latest/ray-observability/index.html)
-  * Seldon Core: Yes, via Alibi, see [here](https://www.seldon.io/solutions/open-source-projects/alibi-detect)
-  * TensorFlow Serving: Yes, via Prometheus or Grafana, see [here](https://itnext.io/monitor-deployed-tensorflow-models-with-prometheus-and-grafana-28d6135a2666#645f)
-  * TorchServe: Yes, both front and backend, see [here](https://pytorch.org/serve/metrics.html)
-  * Vertex AI: Yes, see [here](https://blog.nashtechglobal.com/the-power-of-vertex-ai-monitoring/)
+  * RayServe: Yes, see [here](https://docs.ray.io/en/latest/ray-observability/index.html).
+  * Seldon Core: Yes, via Alibi, see [here](https://www.seldon.io/solutions/open-source-projects/alibi-detect).
+  * TensorFlow Serving: Yes, via Prometheus or Grafana, see [here](https://itnext.io/monitor-deployed-tensorflow-models-with-prometheus-and-grafana-28d6135a2666#645f).
+  * TorchServe: Yes, both front and backend, see [here](https://pytorch.org/serve/metrics.html).
+  * Vertex AI: Yes, see [here](https://blog.nashtechglobal.com/the-power-of-vertex-ai-monitoring/).
 * Anomaly detection: Also known as outlier detection, it is the process of identifying data points that deviate to a large extent from the overall pattern of the data. This is crucial in machine learning (ML) deployment, as it helps identify anomalies in the input data that could negatively impact model performance. [[3]](#References) Additionally, data drift detection is part of this criterion, data drift occurs when changes are observed in joint distribution $p(X, y)$, where $X$ is the model input and $y$ is the model output. Detection of data drift is a growing concern for teams that maintain ML models in production [[8]](#References).
 
   * AWS SageMaker: Yes, see [here](https://aws.amazon.com/de/blogs/machine-learning/anomaly-detection-with-amazon-sagemaker-edge-manager-using-aws-iot-greengrass-v2/)
@@ -91,7 +91,7 @@
   * Kubeflow: Yes, via Alibi-detect from Seldon Core, check [here](https://github.com/kubeflow/pipelines/blob/master/samples/contrib/e2e-outlier-drift-explainer/seldon/README.md)
   * MLflow: Yes, MLflow can be integrated with other libraries that can perform outlier detection. 
   * RayServe: No, since it focuses on the scalable and efficient serving of machine learning models, check [here](https://docs.ray.io/en/latest/serve/index.html)
-  * Seldon Core: Yes, check [here](https://docs.seldon.io/projects/seldon-core/en/latest/analytics/outlier_detection.html)
+  * Seldon Core: Yes, via Alibi detect. Check [this link](https://docs.seldon.io/projects/seldon-core/en/latest/analytics/outlier_detection.html) for details.
   * TensorFlow Serving: No, similar as RayServe, it focused on serving machine learning models efficiently and does not inherently include specific features for anomaly detection during deployment. it can include TensorFlow libraries to do anomaly detection. see [here](https://www.tensorflow.org/tfx/guide/serving)
   * TorchServe: No, similar as RayServe and TensorFlow Serving, see[here](https://pytorch.org/serve/)
   * Vertex AI: No, while Vertex AI itself is not primarily an anomaly detection tool, it offers capabilities and integrations that can be used for anomaly detection purposes in deployed machine learning models, see [here](https://cloud.google.com/vertex-ai/docs/beginner/bqml)
@@ -115,7 +115,7 @@
   * Kubeflow:
   * MLflow: Yes, it supports integration with CI/CD systems like Jenkins, see [here](https://www.restack.io/docs/mlflow-knowledge-mlops-mlflow-guide) for guidance.
   * RayServe
-  * Seldon Core
+  * Seldon Core: Yes, their documentation has guides for setting up CI/CD pipelines using Jenkins Classic and Jenkins X, see [here](https://docs.seldon.io/projects/seldon-core/en/latest/analytics/cicd-mlops.html).
   * TensorFlow Serving
   * TorchServe
   * Vertex AI
@@ -127,7 +127,7 @@
   * Kubeflow:
   * MLflow: No, there was no mention of being able to deploy web applications in the documentation of MLflow.
   * RayServe: any kind of ML models ([Ray Serve: Scalable and Programmable Serving — Ray 2.9.1](https://docs.ray.io/en/latest/serve/index.html#ray-serve-scalable-and-programmable-serving))
-  * Seldon Core
+  * Seldon Core: No, there is no mention of being able to deploy web applications in the documentation of Seldon Core.
   * TensorFlow Serving: only TensorFlow models
   * TorchServe
   * Vertex AI: only ML models built with TensorFlow, XGBoost, Scikit-learn, or custom containers, as online or batch prediction services.
@@ -140,7 +140,7 @@
   * Kubeflow: Open-source
   * MLflow: Open-source
   * RayServe: Open-source
-  * Seldon Core: Open-source
+  * Seldon Core: Open-core model. The core platform is open-source and can be used freely for non-production use cases like pre-production and testing. Production use cases require a paid license. See [source](https://www.seldon.io/strengthening-our-commitment-to-open-core) and [license](https://github.com/SeldonIO/seldon-core?tab=License-1-ov-file#readme).
   * TensorFlow Serving: Open-source
   * TorchServe: Open-source
   * Vertex AI: pay-as you-go
@@ -151,9 +151,9 @@
   * Azure ML: Yes ([microsoft-azureml - Official Image | Docker Hub](https://hub.docker.com/_/microsoft-azureml))
   * BentoML
   * Kubeflow: Yes ([Container Images | Kubeflow](https://www.kubeflow.org/docs/components/notebooks/container-images/))
-  * MLflow: Yes, it officially supports Docker and also provides an offical docker image. see [Official MLflow Docker Image](https://mlflow.org/docs/latest/docker.html)
+  * MLflow: Yes, it officially supports Docker and also provides an official docker image. see [Official MLflow Docker Image](https://mlflow.org/docs/latest/docker.html)
   * RayServe: Yes ([Trying to deploy ray with docker - Ray Libraries (Data, Train, Tune, Serve) / Ray Serve - Ray](https://discuss.ray.io/t/trying-to-deploy-ray-with-docker/766))
-  * Seldon Core
+  * Seldon Core: Yes, it offers [documentation](https://docs.seldon.io/projects/seldon-core/en/latest/python/python_wrapping_docker.html) for deploying Seldon Core on Docker as well as pre-built Docker [images](https://docs.seldon.io/projects/seldon-core/en/latest/reference/images.html).
   * TensorFlow Serving: Yes ([TensorFlow Serving with Docker  |  TFX](https://www.tensorflow.org/tfx/serving/docker))
   * TorchServe
   * Vertex AI: Yes ([Custom containers overview  |  Vertex AI  |  Google Cloud](https://cloud.google.com/vertex-ai/docs/training/containers-overview))
@@ -165,7 +165,7 @@
   * Kubeflow: Yes (via Seldon Core: [Batch processing with Kubeflow Pipelines — seldon-core documentation](https://docs.seldon.io/projects/seldon-core/en/latest/examples/kubeflow_pipelines_batch.html))
   * MLflow: No, as of now it doesn't support offline batch processing. There is an [open issue](https://github.com/mlflow/mlflow/issues/8007) for implementing opportunistic batch processing in MLflow.
   * RayServe: Yes ([Dynamic Request Batching — Ray 2.9.1](https://docs.ray.io/en/latest/serve/advanced-guides/dyn-req-batch.html))
-  * Seldon Core: Yes ([Batch processing with Kubeflow Pipelines — seldon-core documentation](https://docs.seldon.io/projects/seldon-core/en/latest/examples/kubeflow_pipelines_batch.html))
+  * Seldon Core: Yes ([Batch Processing with Seldon Core](https://docs.seldon.io/projects/seldon-core/en/latest/servers/batch.html))
   * TensorFlow Serving: Yes ([serving/tensorflow_serving/batching/README.md at master · tensorflow/serving · GitHub](https://github.com/tensorflow/serving/blob/master/tensorflow_serving/batching/README.md#batch-scheduling-parameters-and-tuning))
   * TorchServe
   * Vertex AI ([Get batch predictions and explanations  |  Vertex AI  |  Google Cloud](https://cloud.google.com/vertex-ai/docs/tabular-data/classification-regression/get-batch-predictions))
