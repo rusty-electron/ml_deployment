@@ -1,6 +1,12 @@
 # AISA Study Project ML Deployment Options
 
+TODO: add a short description of the project or abstract
+
+#### Check [data-sources.md](./data-sources.md) for the sources of the data presented in our findings.
+
 TODO: create a QR code, add it to the poster and link it to this repo.
+
+TODO: add a TOC
 
 ## Deployment Options
 
@@ -28,6 +34,8 @@ TODO: create a QR code, add it to the poster and link it to this repo.
 * **Offline batch processing/Request batching**: it refers to performing predictions on a batch of data in a scheduled, non-interactive, and often offline manner. Some models are not deployed for real-time applications, they can utilize the parallelizing capabilities of hardware accelerators to wait for a batch of requests to accumulate and then complete them together. [2]
 
 ## Conclusion
+
+TODO: after the final version of the table, convert each row header into a link to the corresponding section.
 
 ### Comparative Analysis Table
 | Criteria                    | AWS SageMaker                              | Azure ML                                  | BentoML                                   | Kubeflow                                  | MLflow                                    | RayServe                                  | Seldon Core                               | TensorFlow Serving     | TorchServe          |
