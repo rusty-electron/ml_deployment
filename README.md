@@ -42,8 +42,8 @@ TODO: create a QR code, add it to the poster and link it to this repo.
 | Docker Support              | ✔                                          | ✔                                         | ✔                                         | ✔                                         | ✔                                         | ✔                                         | ✔                                         | ✔                      | ✔                   |
 | Offline Batch Processing    | ✔                                          | ✔                                         | ✔                                         | ✔                                         | X                                         | ✔                                         | ✔                                         | ✔                      | ✔                   |
 
-| **Symbol** | **Description**                                                                                                                   |   |   |   |
-|------------|-----------------------------------------------------------------------------------------------------------------------------------|---|---|---|
+| **Symbol** | **Description**                                                                                                                   |   |
+|------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | ✔          | it is specified clearly on its official website or docs that there is no need to incoorperate with external libraries or products |
 | ✔*         | it is specified clearly on its official website or docs that it can incoorperate with external libraries or products              |
 | ❓          | it is not specified clearly on its official website or docs about the avalability of this feature                                 |
