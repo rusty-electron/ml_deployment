@@ -117,7 +117,7 @@
 * Popularity: how popular is the framework? We quantify this metric via github stars, following the methodology of [[11](#references)]:
   * Refer to the table for star counts.
   * Numerous options in our list, including MLflow and Kubeflow, offer a broader range of functions beyond mere deployment, which may positively influence their popularity.
-* Cost plan: How much does it cost e.g. monthly?[[4]](#References) We can find this data from their pricing page of the respective websites. This can also include feature like cost monitoring.
+* Cost plan: How much does it cost e.g. monthly?[[4]](#References) We can find this data from their pricing page of the respective websites. This can also include feature like cost monitoring. TODO: why is [4] cited?
 
   * AWS SageMaker: Paid tool with different pricing plans, see [here](https://aws.amazon.com/sagemaker/pricing/).
   * Azure ML: Specific price not mentioned on the official website, price plan can order after consulting support.
