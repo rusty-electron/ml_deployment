@@ -93,7 +93,7 @@
 * Model explainability: Explanation algorithms should be available in order to provide insights into the decision process of the model. Explainability in the outputs of a deployed model help in building trust in the ML system [[3]](#References).
 
   * AWS SageMaker: Yes, this is implemented in AWS Sagemaker via SageMaker Clarify, see [here](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-model-explainability.html).
-  * Azure ML: Yes, check [here](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-machine-learning-interpretability-automl?view=azureml-api-1)
+  * Azure ML: Yes, model interpretability/explainability techniques are supported as documented [here](https://learn.microsoft.com/en-us/azure/machine-learning/how-to-machine-learning-interpretability-automl?view=azureml-api-1)
   * BentoML: Yes, via [Arize AI integration](https://docs.bentoml.org/en/latest/integrations/arize.html).
   * Kubeflow: Yes, this is possible via [alibi](https://www.kubeflow.org/docs/external-add-ons/serving/overview/)
   * MLflow: Yes, this is possible via [API](https://mlflow.org/docs/latest/python_api/mlflow.shap.html), it utilizes [SHAP](https://shap.readthedocs.io/en/latest/) for this function.
@@ -131,7 +131,6 @@
   * TorchServe: Open-source
   * Vertex AI: pay-as you-go
 * Compatibility with Docker/Docker support: Docker containers encapsulate all the dependencies, libraries, and configurations needed for an application. It also allows for the creation of reproducible environments. This means that the same Docker container can be run on different machines or cloud services, ensuring that the ML model’s behavior remains consistent across various deployment scenarios. In many cases, platforms can offer pre-built docker images for common use-cases. [[6]](#References)
-  (it might not be a good criterion as all the options support Docker)
 
   * AWS SageMaker: Yes, it offers extensive support for docker containers, see [Use Docker containers to build models](https://docs.aws.amazon.com/sagemaker/latest/dg/docker-containers.html) and also offers pre-built docker images for common use-cases, see [Pre-built Docker images](https://docs.aws.amazon.com/sagemaker/latest/dg/pre-built-containers-frameworks-deep-learning.html).
   * Azure ML: Yes, see [microsoft-azureml - Official Image | Docker Hub](https://hub.docker.com/_/microsoft-azureml)

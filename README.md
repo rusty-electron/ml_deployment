@@ -1,6 +1,6 @@
 # AISA Study Project ML Deployment Options
 
-QR code for varifications keep in gitlab with open sourced access.
+TODO: create a QR code, add it to the poster and link it to this repo.
 
 ## Deployment Options
 
@@ -44,10 +44,10 @@ QR code for varifications keep in gitlab with open sourced access.
 
 | **Symbol** | **Description**                                                                                                                   |   |   |   |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------|---|---|---|
-| ✔          | it is specified clearly on its official website or docs that there is no need to incoorperate with external libraries or products |   |   |   |
-| ✔*         | it is specified clearly on its official website or docs that it can incoorperate with external libraries or products              |   |   |   |
-| ❓          | it is not specified clearly on its official website or docs about the avalability of this feature                                 |   |   |   |
-| X          | It is specified that the feature is not available with the framework                                                              |   |   |   |
+| ✔          | it is specified clearly on its official website or docs that there is no need to incoorperate with external libraries or products |
+| ✔*         | it is specified clearly on its official website or docs that it can incoorperate with external libraries or products              |
+| ❓          | it is not specified clearly on its official website or docs about the avalability of this feature                                 |
+| X          | It is specified that the feature is not available with the framework                                                              |
 
 ### Disscussion and Strategy
 
