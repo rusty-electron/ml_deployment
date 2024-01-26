@@ -51,6 +51,8 @@ TODO: create a QR code, add it to the poster and link it to this repo.
 
 ### Disscussion and Strategy
 
+TODO: either update or remove this section
+
 * **Broad Support for ML Frameworks**: Azure ML, BentoML, Kubeflow, MLflow, and RayServe offer wide-ranging support for multiple machine learning frameworks, making them versatile choices for diverse model deployment needs. AWS SageMaker, while part of the AWS ecosystem, also supports various models but with less customization.
 * **Model Metrics Monitoring**: All analyzed deployment options, including AWS SageMaker, Azure ML, BentoML, Kubeflow, MLflow, RayServe, Seldon Core, TensorFlow Serving, TorchServe, and Vertex AI, provide model metrics monitoring capabilities. This feature is crucial for maintaining and understanding model performance in production.
 * **Anomaly Detection**: AWS SageMaker and Azure ML explicitly provide anomaly detection capabilities. BentoML offers this with some limitations, while the capability is uncertain or not a primary feature in Kubeflow, MLflow, RayServe, Seldon Core, TensorFlow Serving, TorchServe, and Vertex AI.
@@ -76,4 +78,4 @@ TODO: add license after consulting Markus
 
 ## Project status
 
-Begins at 2023-12-04
+Started on 2023-12-04
