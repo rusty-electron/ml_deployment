@@ -50,9 +50,9 @@ TODO: after the final version of the table, convert each row header into a link 
 | Docker Support              | ✔                                          | ✔                                         | ✔                                         | ✔                                         | ✔                                         | ✔                                         | ✔                                         | ✔                      | ✔                   |
 | Offline Batch Processing    | ✔                                          | ✔                                         | ✔                                         | ✔                                         | X                                         | ✔                                         | ✔                                         | ✔                      | ✔                   |
 
-†: Most of the deployment framework support several ML frameworks, the names of only the most popular ones are listed in the cells due to space constraint. See [data source](TODO: add path) file for details.
+†: Most of the deployment frameworks support models created in various ML frameworks, the names of only the most popular ones are listed in the respective cells due to space constraints. See [data source](TODO: add path) file for details.
 
-*: This indicates special conditions apply to this entry. Please refer to notes in the [data source file](./data-sources.md) for specific details.
+*: This indicates that special conditions apply to this entry. Please refer to notes in the [data source file](./data-sources.md) for specific details.
 
 | **Symbol** | **Description**                                                                                                                   |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------|
