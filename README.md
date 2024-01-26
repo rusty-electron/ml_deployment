@@ -72,7 +72,7 @@ In summary, the choice of deployment platform depends on specific needs like fra
 
 ## License
 
-Through QR code, this repo could be linked as project details.
+TODO: add license after consulting Markus
 
 ## Project status
 
