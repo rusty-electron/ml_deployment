@@ -115,20 +115,20 @@
   * TorchServe: No, There is no official documentation for setting up CI/CD pipelines for TorchServe.
   * Vertex AI: No, there is no mention of such feature in the official documentation.
 * Popularity: how popular is the framework? We quantify this metric via github stars, following the methodology of [[11](#references)]:
+
   * Refer to the table for star counts.
   * Numerous options in our list, including MLflow and Kubeflow, offer a broader range of functions beyond mere deployment, which may positively influence their popularity.
-* Cost plan: How much does it cost e.g. monthly?[[4]](#References) We can find this data from their pricing page of the respective websites. This can also include feature like cost monitoring. TODO: why is [4] cited?
+* Cost plan: How much does it cost e.g. monthly? [[4]](#References) We can find this data from their pricing page of the respective websites. This can also include feature like cost monitoring. TODO: why is [4] cited?
 
   * AWS SageMaker: Paid tool with different pricing plans, see [here](https://aws.amazon.com/sagemaker/pricing/).
   * Azure ML: Specific price not mentioned on the official website, price plan can order after consulting support.
-  * BentoML: Open-source. (ask about including paid plans of subsidiaries like BentoCloud to Markus)
-    It does offers fully managed platforms on a pay-as-you-go basis. It has a enterprise plan that offers additional features like deploying on VPCs, dedicated support, etc. See [details](https://www.bentoml.com/cloud#pricing).
-  * Kubeflow: Open-source
-  * MLflow: Open-source
-  * RayServe: Open-source
+  * BentoML: Open-source with Apache License 2.0, It does offers fully managed platforms on a pay-as-you-go basis. It has a enterprise plan that offers additional features like deploying on VPCs, dedicated support, etc. See [details](https://www.bentoml.com/cloud#pricing).
+  * Kubeflow: Open-source with Apache License 2.0
+  * MLflow: Open-source with Apache License 2.0
+  * RayServe: Open-source with Apache License 2.0
   * Seldon Core: Open-core model. The core platform is open-source and can be used freely for non-production use cases like pre-production and testing. Production use cases require a paid license. See [source](https://www.seldon.io/strengthening-our-commitment-to-open-core) and [license](https://github.com/SeldonIO/seldon-core?tab=License-1-ov-file#readme).
-  * TensorFlow Serving: Open-source
-  * TorchServe: Open-source
+  * TensorFlow Serving: Open-source with Apache License 2.0
+  * TorchServe: Open-source with Apache License 2.0
   * Vertex AI: pay-as you-go
 * Compatibility with Docker/Docker support: Docker containers encapsulate all the dependencies, libraries, and configurations needed for an application. It also allows for the creation of reproducible environments. This means that the same Docker container can be run on different machines or cloud services, ensuring that the ML model’s behavior remains consistent across various deployment scenarios. In many cases, platforms can offer pre-built docker images for common use-cases. [[6]](#References)
 
@@ -159,36 +159,23 @@
 
 [1] Bruno Cartaxo, Gustavo Pinto, and Sergio Soares. Rapid Reviews in Software Engineering. In Michael Felderer and Guilherme Horta Travassos, editors,Contemporary Empirical Methods in Software Engineering, pages 357–384. Springer International Publishing, Cham, 2020.
 
-[2] Michael Galarnyk.Considerations for Deploying Machine Learning Models in Production,
-November 2021.
+[2] Michael Galarnyk.Considerations for Deploying Machine Learning Models in Production, November 2021.
 
 [3] Janis Klaise, Arnaud Van Looveren, Clive Cox, Giovanni Vacanti, and Alexandru Coca. Moni-
 toring and explainability of models in production, July 2020. arXiv:2007.06299 [cs, stat].
 
-[4] Radhika V. Kulkarni, Arjun Thakur, Shravani Nalbalwar, Shubham Shah, and Sankalp Chordia. Exploring Scalable and Efficient Deployment of Machine Learning Models:A Comparative
-Analysis of Amazon SageMaker and Heroku. In2023 International Conference on Information
-Technology (ICIT), pages 746–751, Amman, Jordan, August 2023. IEEE.
+[4] Radhika V. Kulkarni, Arjun Thakur, Shravani Nalbalwar, Shubham Shah, and Sankalp Chordia. Exploring Scalable and Efficient Deployment of Machine Learning Models:A Comparative Analysis of Amazon SageMaker and Heroku. In2023 International Conference on Information Technology (ICIT), pages 746–751, Amman, Jordan, August 2023. IEEE.
 
-[5] Philipp Mayring.Qualitative content analysis - theoretical foundation, basic procedures and
-software solution. January 2014.
+[5] Philipp Mayring.Qualitative content analysis - theoretical foundation, basic procedures and software solution. January 2014.
 
-[6] Moses Openja, Forough Majidi, Foutse Khomh, Bhagya Chembakottu, and Heng Li. Studying
-the Practices of Deploying Machine Learning Projects on Docker. InThe International Confer-
-ence on Evaluation and Assessment in Software Engineering 2022, pages 190–200, June 2022. arXiv:2206.00699 [cs].
+[6] Moses Openja, Forough Majidi, Foutse Khomh, Bhagya Chembakottu, and Heng Li. Studying the Practices of Deploying Machine Learning Projects on Docker. InThe International Conference on Evaluation and Assessment in Software Engineering 2022, pages 190–200, June 2022. arXiv:2206.00699 [cs].
 
-[7] Carolyn B. Seaman.Qualitative Methods.In Forrest Shull, Janice Singer, and Dag I. K.
-Sjøberg, editors,Guide to Advanced Empirical Software Engineering, pages 35–62. Springer,
-London, 2008.
+[7] Carolyn B. Seaman.Qualitative Methods.In Forrest Shull, Janice Singer, and Dag I. K. Sjøberg, editors,Guide to Advanced Empirical Software Engineering, pages 35–62. Springer, London, 2008.
 
-[8] Ralf Seppelt, Felix Müller, Boris Schröder, and Martin Volk. Challenges of simulating complex
-environmental systems at the landscape scale:A controversial dialogue between two cups of
-espresso.Ecological Modelling, 220(24):3481–3489, December 2009.
+[8] Ralf Seppelt, Felix Müller, Boris Schröder, and Martin Volk. Challenges of simulating complex environmental systems at the landscape scale:A controversial dialogue between two cups of espresso.Ecological Modelling, 220(24):3481–3489, December 2009.
 
-[9] Hannah Snyder.Literature review as a research methodology:An overview and guidelines.
-Journal of Business Research, 104:333–339, November 2019.
+[9] Hannah Snyder.Literature review as a research methodology:An overview and guidelines. Journal of Business Research, 104:333–339, November 2019.
 
 [10] Richard J. Torraco. Writing Integrative Literature Reviews: Guidelines and Examples - Richard J. Torraco, 2005.
 
-[11] H. Borges, A. Hora, and M. T. Valente, “Understanding the factors that
-impact the popularity of GitHub repositories,” in Int’l Conf. Software
-Maintenance and Evolution. IEEE, 2016, pp. 334–344.
+[11] H. Borges, A. Hora, and M. T. Valente, “Understanding the factors that impact the popularity of GitHub repositories,” in Int’l Conf. Software Maintenance and Evolution. IEEE, 2016, pp. 334–344.
