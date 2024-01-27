@@ -2,6 +2,20 @@
 
 In this document, we list and describe the data sources that we used for our research. The following section is divided into subsections, each of which lists the sources for a specific criterion. We list a brief description of the data source and the link to the source whereever applicable.
 
+### Table of Contents
+
+* [Criteria](#Criteria)
+  * [Supported ML frameworks](#Supported-ML-frameworks)
+  * [Model Metrics Monitoring](#Model-Metrics-Monitoring)
+  * [Anomaly detection](#Anomaly-detection)
+  * [Model explainability](#Model-explainability)
+  * [Continuous integration and continuous delivery](#Continuous-integration-and-continuous-delivery)
+  * [Popularity](#Popularity)
+  * [Cost plan](#Cost-plan)
+  * [Compatibility with Docker/Docker support](#Compatibility-with-Docker/Docker-support)
+  * [Offline batch processing/Request batching](#Offline-batch-processing/Request-batching)
+* [References](#References)
+
 ## Criteria
 
 ### Supported ML frameworks
