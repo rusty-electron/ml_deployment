@@ -8,8 +8,8 @@ In this document, we list and describe the data sources that we used for our res
   * [Supported ML frameworks](#supported-ml-frameworks)
   * [Model Metrics Monitoring](#model-metrics-monitoring)
   * [Anomaly detection](#anomaly-detection)
-  * [Model explaination(#model-explaination)
-  * [Continuous integration and continuous delivery](#continuous-integration-and-continuous-delivery)
+  * [Model explainability](#model-explainability)
+  * [CI/CD Integration](#continuous-integration-and-continuous-delivery)
   * [Popularity](#popularity)
   * [Cost plan](#cost-plan)
   * [Compatibility with Docker/Docker support](#compatibility-with-dockerdocker-support)
@@ -97,7 +97,7 @@ Also known as outlier detection, it is the process of identifying data points th
 * TorchServe: No, there is no mention of such feature in the official documentation.
 * Vertex AI: Yes, see [link](https://cloud.google.com/vertex-ai/docs/featurestore/monitoring#view_feature_value_anomalies) for more details.
 
-### Model explaination
+### Model explainability
 
 Explanation algorithms should be available in order to provide insights into the decision process of the model. Explainability in the outputs of a deployed model help in building trust in the ML system [[3]](#References).
 
