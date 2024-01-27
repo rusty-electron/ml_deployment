@@ -6,7 +6,7 @@ In this study, we conducted a comparative analysis of deployment options for ML 
 
 ## Table of Contents
 
-* [Introduction](#Introduction)
+* [Introduction](./data-sources.md#Introduction)
 * [Methods](#Methods)
 * [Results](#Results)
   * [Deployment Options](#deployment-options)
