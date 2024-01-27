@@ -145,7 +145,7 @@ How much does it cost e.g. monthly? [[4]](#References) We can find this data fro
   * BentoML: Yes, see [BentoML | Docker](https://docs.bentoml.org/en/latest/concepts/deploy.html#docker).
   * Kubeflow: Yes, see ([Container Images | Kubeflow](https://www.kubeflow.org/docs/components/notebooks/container-images/))
   * MLflow: Yes, it officially supports Docker and also provides an official docker image. see [Official MLflow Docker Image](https://mlflow.org/docs/latest/docker.html)
-  * RayServe: Yes ([Trying to deploy ray with docker - Ray Libraries (Data, Train, Tune, Serve) / Ray Serve - Ray](https://discuss.ray.io/t/trying-to-deploy-ray-with-docker/766))
+  * RayServe: Yes ([Trying to deploy ray with docker](https://discuss.ray.io/t/trying-to-deploy-ray-with-docker/766))
   * Seldon Core: Yes, it offers [documentation](https://docs.seldon.io/projects/seldon-core/en/latest/python/python_wrapping_docker.html) for deploying Seldon Core on Docker as well as pre-built Docker [images](https://docs.seldon.io/projects/seldon-core/en/latest/reference/images.html).
   * TensorFlow Serving: Yes, see [TensorFlow Serving with Docker  |  TFX](https://www.tensorflow.org/tfx/serving/docker)
   * TorchServe: Yes, it offer documentation for preparing docker images as well as scripts for building docker images. See [here](https://github.com/pytorch/serve/tree/master/docker) for details.
@@ -156,15 +156,15 @@ How much does it cost e.g. monthly? [[4]](#References) We can find this data fro
 it refers to performing predictions on a batch of data in a scheduled, non-interactive, and often offline manner. Some models are not deployed for real-time applications, they can utilize the parallelizing capabilities of hardware accelerators to wait for a batch of requests to accumulate and then complete them together. [[2]](#References)
 
   * AWS SageMaker: Yes, see [Batch Transform - Amazon SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/batch-transform.html).
-  * Azure ML: Yes, see [Deploy machine learning models in production environments - Cloud Adoption Framework | Microsoft Learn](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/ml-deployment-inference#architectural-considerations)
+  * Azure ML: Yes, see [Batch endpoints](https://learn.microsoft.com/en-us/azure/machine-learning/concept-endpoints-batch?view=azureml-api-2).
   * BentoML: Yes, it supports adaptive batching. See [here](https://docs.bentoml.com/en/latest/guides/batching.html) for details.
-  * Kubeflow: Yes (via Seldon Core: [Batch processing with Kubeflow Pipelines — seldon-core documentation](https://docs.seldon.io/projects/seldon-core/en/latest/examples/kubeflow_pipelines_batch.html))
+  * Kubeflow: Yes (via Seldon Core: [Batch processing with Kubeflow Pipelines](https://docs.seldon.io/projects/seldon-core/en/latest/examples/kubeflow_pipelines_batch.html)).
   * MLflow: No, as of now it doesn't support offline batch processing. There is an [open issue](https://github.com/mlflow/mlflow/issues/8007) for implementing opportunistic batch processing in MLflow.
-  * RayServe: Yes, see [Dynamic Request Batching — Ray 2.9.1](https://docs.ray.io/en/latest/serve/advanced-guides/dyn-req-batch.html)
-  * Seldon Core: Yes, see [Batch Processing with Seldon Core](https://docs.seldon.io/projects/seldon-core/en/latest/servers/batch.html)
-  * TensorFlow Serving: Yes, see [serving/tensorflow_serving/batching/README.md at master · tensorflow/serving · GitHub](https://github.com/tensorflow/serving/blob/master/tensorflow_serving/batching/README.md#batch-scheduling-parameters-and-tuning)
+  * RayServe: Yes, see [Dynamic Request Batching](https://docs.ray.io/en/latest/serve/advanced-guides/dyn-req-batch.html).
+  * Seldon Core: Yes, see [Batch Processing with Seldon Core](https://docs.seldon.io/projects/seldon-core/en/latest/servers/batch.html).
+  * TensorFlow Serving: Yes, see [tensorflow/serving on GitHub](https://github.com/tensorflow/serving/blob/master/tensorflow_serving/batching/README.md#batch-scheduling-parameters-and-tuning).
   * TorchServe: Yes, it supports request batching as per [documentation](https://pytorch.org/serve/batch_inference_with_ts.html).
-  * Vertex AI: Yes, see [Get batch predictions and explanations  |  Vertex AI  |  Google Cloud](https://cloud.google.com/vertex-ai/docs/tabular-data/classification-regression/get-batch-predictions)
+  * Vertex AI: Yes, see [Get batch predictions and explanations](https://cloud.google.com/vertex-ai/docs/tabular-data/classification-regression/get-batch-predictions).
 
 ## References
 
