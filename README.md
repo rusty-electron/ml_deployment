@@ -6,7 +6,15 @@ TODO: add a short description of the project or abstract
 
 TODO: create a QR code, add it to the poster and link it to this repo.
 
-TODO: add a TOC
+## Table of Contents
+
+* [Deployment Options](#deployment-options)
+* [Criteria](#criteria)
+* [Conclusion](#conclusion)
+  * [Comparative Analysis Table](#comparative-analysis-table)
+* [Future Work](#future-work)
+* [License](#license)
+* [Project status](#project-status)
 
 ## Deployment Options
 
@@ -22,6 +30,8 @@ TODO: add a TOC
 * [Vertex AI (Google Cloud)](https://cloud.google.com/vertex-ai/docs)
 
 ## Criteria
+
+TODO: update this section with latest description of the criteria.
 
 * **Number of supported input model type**: it can deploy any common model built with popular ML training frameworks. e.g., onnx, tensorflow, keras, etc. [2]
 * **Model Metrics Monitoring**: As it is not possible to check the output labels for live data, the statistics of input data and output predictions are monitored as a proxy for model performance. [3]
@@ -55,13 +65,14 @@ TODO: after the final version of the table, convert each row header into a link 
 
 *: This indicates that special conditions apply to this entry. Please refer to notes in the [data source file](./data-sources.md) for specific details.
 
+### Table legend
+
 | **Symbol** | **Description**                                                                                                             |
 | ---------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| ✔               | it is specified clearly on its official website or docs that there is no need to incoorperate with external libraries or products |
-| ➖               | it is specified clearly on its official website or docs that it can incoorperate with external libraries or products              |
-| ❓               | it is not specified clearly on its official website or docs about the avalability of this feature                                 |
-| ❌               | It is specified that the feature is not available with the framework                                                              |
-
+| ✔               | It is specified clearly on its official documentation that the feature is made available by the framework and not external integration or libraries are required for this purpose.|
+| ◕               | It is specified clearly on its official documentation that the feature is made available with the help of external integration or libraries.|
+| ❓               | It is not specified clearly on its official documentation about the availability of this feature. |
+| ❌               | It is specified that the feature is not available with the framework. |
 ### Disscussion and Strategy
 
 TODO: either update or remove this section
@@ -80,10 +91,10 @@ In summary, the choice of deployment platform depends on specific needs like fra
 
 ## Future Work
 
-* Conducting hand-on experiments and deployment tests for each machine learning deployment option to assess more criteria. More specificlly, **Deployment Time Analysis**, **Cost Evaluation, **Cross-Platform Compatibility and Interoperability, **Scalability and Performance Testing, **User Experience and Ease of Use.********
-* **Extend the comparative analysis** to include ML frameworks for other stages of the MLops process, such as data preparation, model design, and model training.
-* **Refine the analysis** to each use case domain, compare and analyze the strengths and weaknesses of these options in each domain i.e. in training computer vision model, LLM etc. This can also extend to analysis of their most advanced libraries or features.
-* **Market analysis** such like comparing their popularity and pricing plan in different aspects like user-group, security, unique selling points etc.
+* Conducting hands-on experiments and deployment tests for each machine learning deployment framework to assess more criteria. More specifically, **Deployment Time Analysis**, **Cost Evaluation**, **Cross-Platform Compatibility and Interoperability**, **Scalability and Performance Testing, User Experience** and **Ease of Use** should be considered.
+* **Extend the comparative analysis** to include ML frameworks for other stages of the MLops process, such as data preparation, model design and model training.
+* **Refine the analysis** for domain specific use cases, compare and analyze the strengths and weaknesses of these framework in task specific models i.e., computer vision models, LLMs, LSTMs, etc. This is because different frameworks are optimized for different tasks.
+* **Market analysis** by comparing their popularity and pricing plan in different aspects such as user-group, security, low-latency use case, etc.
 
 ## License
 
