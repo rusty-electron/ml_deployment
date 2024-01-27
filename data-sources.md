@@ -136,7 +136,7 @@ How popular is the framework? We quantify this metric via github stars, followin
 
 ### Cost plan
 
-How much does it cost e.g. monthly? [[4]](#References) We can find this data from their pricing page of the respective websites. This can also include feature like cost monitoring. TODO: why is [4] cited?
+How much does it cost e.g. monthly? [[4]](#References) We can find this data from their pricing page of the respective websites. This can also include feature like cost monitoring.
 
 * AWS SageMaker: Paid tool with different pricing plans, see [here](https://aws.amazon.com/sagemaker/pricing/).
 * Azure ML: Specific price not mentioned on the official website, price plan can order after consulting support.
