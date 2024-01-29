@@ -21,7 +21,7 @@ In this study, we conducted a comparative analysis of deployment options for ML 
 
 ## Introduction
 
-In recent years, there has been a growing interest in deploying “smart systems”, which areable to emulate human behavior on specific tasks [a]. Typically, these systems employ artificialintelligence(AI) techniques, frequently machinelearning(ML), to achieve their human-like behavior. When deploying the system, we must also deploy the ML model as part of the system. While implementing a bespoke solution is always an option, recent years have also seen a rise in the number of off-the-shelf deployment options [b], e.g., TensorFlow Serving or MLflow (see [website](#deploymentoptions)). This growing competition could overwhelm practitioner's looking for a solution to deploy their ML models, for example, in the context of a make-or-buy decision. A comparative analysis ofoff-the-shelf deployment options across well-reasoned criteria would help them gain clarity about their needs and identify suitable options that fulfill these needs.
+In recent years, there has been a growing interest in deploying “smart systems”, which are able to emulate human behavior on specific tasks [a]. Typically, these systems employ machine learning(ML) techniques, to achieve their human-like behavior. When deploying the system, we must also deploy the ML model as part of the system. While implementing a bespoke solution is always an option, recent years have also seen a rise in the number of off-the-shelf deployment options [b], e.g., TensorFlow Serving or MLflow (see [website](#deploymentoptions)). This growing competition could overwhelm practitioner's looking for a solution to deploy their ML models, for example, in the context of a make-or-buy decision. A comparative analysis ofoff-the-shelf deployment options across well-reasoned criteria would help them gain clarity about their needs and identify suitable options that fulfill these needs.
 
 ## Method
 
@@ -30,8 +30,6 @@ As the basis for the comparison, a very lightweight, non-systematic literature s
 ## Result
 
 Check [data-sources.md](./data-sources.md) for the sources of the data presented in our findings.
-
-TODO: create a QR code, add it to the poster and link it to this repo.
 
 ### Deployment Options
 
