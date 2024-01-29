@@ -103,6 +103,10 @@ From a business point of view, there is no doubt that reliable and well establis
 * **Market analysis** by comparing their popularity and pricing plan in different aspects such as user-group, security, low-latency use case, etc.
 * **Development** of Offline Batch processing for MLflow.
 
+## LICENSE
+
+AISA Study Project - ML Deployment Options © 2024 by Hongcheng Jia and Pritom Gogoi is licensed under CC BY-NC 4.0 
+
 ## References
 
 [a] Saleema Amershi et al. “Software Engineering for Machine Learning: A Case Study”. In:2019 IEEE/ACM 41st International Conference on Software Engineering: Software Engineeringin Practice (ICSE-SEIP). Montreal, QC, Canada (May 25–31, 2019). Montreal, QC, Canada:IEEE, May 2019, pp. 291–300. ISBN: 978-1-7281-1761-4. DOI:10.1109/ICSE-SEIP.2019.00042.
